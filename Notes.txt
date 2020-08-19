@@ -1,0 +1,59 @@
+Phase 4
+-----------------------------------------------------------
+backpatch0					PASS
+backpatch1					PASS			
+backpatch2					PASS
+backpatch3					PASS
+p3t_assignments_complex		PASS
+p3t_assignments_objects		PASS
+p3t_assignments_simple		PASS
+p3t_basic_expr				PASS				
+p3t_calls					PASS
+p3t_consts_maths			PASS
+p3t_flow_control			PASS
+p3t_flow_control_error		PASS
+p3t_funcdecl				PASS
+p3t_if_else					PASS
+p3t_object_creation_expr	PASS - Segmentation Fault
+p3t_relational				PASS
+p3t_var_maths				PASS
+------------------------------------------------------------
+
+Phase 5
+------------------------------------------------------------
+calc        	  -> PASS
+
+basic_complex 	  -> Error: 'undef' involved in equality!
+Factorial         -> Error: 'undef' involved in equality! 
+Fibonacci         -> Error: 'undef' involved in equality! 
+Power             -> Error: 'undef' involved in equality! 
+Simple            -> Error: 'undef' involved in equality!
+
+basic_simple  	  -> Assertion `pc == func->data.funcVal' failed.
+Circle            -> Assertion `t && &stack[AVM_STACKSIZE-1]
+delegation        -> Assertion `(old_top == initial_top (av) && old_size == 0) 
+err1              -> Assertion `t && &stack[AVM_STACKSIZE-1]
+err2              -> Assertion `t && &stack[AVM_STACKSIZE-1]
+tables2           -> Assertion `lv && (&stack[AVM_STACKSIZE-1] >= lv && lv
+tables3           -> Assertion `t && &stack[AVM_STACKSIZE-1] >= t && t > &stack[top]'
+tables_bonus      -> Assertion `t && &stack[AVM_STACKSIZE-1] >= t && t > &stack[top]'
+line_point        -> Assertion `t && &stack[AVM_STACKSIZE-1] >= t && t > &stack[top]'
+err4              -> Assertion  stack[top].type = number_m;
+
+err3              -> Segmentation Fault 
+err5              -> Segmentation Fault
+err6              -> Segmentation Fault
+funcs             -> Segmentation Fault
+queens            -> Segmentation Fault
+Random            -> Segmentation Fault
+hercules          -> Segmentation Fault
+libfuncs          -> Segmentation Fault
+ShadowedFunctions -> Segmentation Fault
+tables1           -> Segmentation Fault
+Tree1             -> Segmentation Fault 
+Tree2             -> Segmentation Fault
+
+
+
+
+
